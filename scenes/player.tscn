@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://vnuwjj1ovrpo"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_tcl1o"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_8mkkx"]
+specular_color = Color(0.113725, 1, 1, 1)
+
+[node name="Player" type="Node2D"]
+position = Vector2(-1, -1)
+script = ExtResource("1_tcl1o")
+
+[node name="PlayerImage" type="Sprite2D" parent="."]
+modulate = Color(0, 0.642599, 0.155039, 1)
+position = Vector2(26.25, 20.75)
+scale = Vector2(53.5, 42.5)
+texture = SubResource("CanvasTexture_8mkkx")
